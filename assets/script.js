@@ -18,7 +18,7 @@ let orderLetter = [],
     letterError = '',
     option = false;
 
-let setWord = ['MORNING', 'HELLO', 'HOUSE', 'EVENING', 'SCHOOL', 'STADIUM', 'HOTDOG', 'EDUCATION', 'MAGAZINE', 'LANGUAGE'];
+let setWord = ['MORNING', 'HELLO', 'HOUSE', 'EVENING', 'SCHOOL', 'STADIUM', 'HOTDOG', 'MASTER', 'MAGAZINE', 'LANGUAGE'];
 
 const drawStrokeObj = {
     drawHead(x, y, raio, cor) {
