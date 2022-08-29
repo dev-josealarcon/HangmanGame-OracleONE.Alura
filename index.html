@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Alarcón | Hangman Game</title>
+    <link rel="shortcut icon" href="./assets/jose alarcon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="header">
+            <a href="https://jose-alarcon.com" target="_blank" rel="noreferrer noopener" class="mark">
+
+                <div class="logo">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <span>José Alarcón | Hangman Game</span>
+            </a>
+
+            <div>
+                <h3>Instructions:</h3>
+                <div id="info-alert">
+                    <p >- Only work with capital letters.</p>
+                    <p >- Letters with accents or special characters must not be used.</p>
+                    <p >- It should only be possible to write letters (numbers will not be valid).</p>
+                </div>
+               
+            </div>
+
+
+        </div>
+
+        <div class="body" id="show-main">
+            <button id="btn-game" class="btn-main btn-padding">Start game</button>
+            <button id="btn-add-word">Add new word</button>
+        </div>
+
+        <div class="body" id="show-game">
+
+            <canvas width="350" height="450"></canvas>
+
+            <div id="word-ok"></div> 
+
+            <div id="word-lines"> </div>
+
+            <div id="word-error"> </div>
+            
+            <div>
+                <button id="btn-new-game" class="btn-main">New game</button>
+                <button id="btn-give-up">To give up</button>
+            </div>
+        </div>
+
+        <div class="body" id="show-add-word">
+            <textarea name="txt-add-word" id="txt-add-word" cols="30" rows="10" placeholder="Type a word..."
+                title="Uppercase letters only and no accents." data-pattern="^[A-Z]{1,8}$" ></textarea>
+            <p id="info-word">***Max. 8 letters and cannot be empty.</p>
+            <div>
+                <button id="btn-word-save" class="btn-main" disabled>Save and start</button>
+                <button id="btn-word-cancel" disabled>Cancel</button>
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/dev-josealarcon?tab=repositories" target="_blank"
+                rel="noreferrer noopener">GitHub</a>
+            <a href="https://jose-alarcon.com" target="_blank" rel="noreferrer noopener">Site-Portfolio</a>
+            <a href="https://www.linkedin.com/in/jose-alarcon-71a5b8241/" target="_blank"
+                rel="noreferrer noopener ">LinkedIn</a>
+
+        </div>
+        <p>&copy; 2022 Hangman Game from José Alarcón</p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
