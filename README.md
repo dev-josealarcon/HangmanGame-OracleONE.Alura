@@ -1,4 +1,5 @@
 # HangmanGame-OracleONE.Alura
+## Hangman Game
 
 ## Access the game by clicking  >> <a href="https://dev-josealarcon.github.io/TextDecoder-OracleONE.Alura/" target="_blank">here</a>!
 
