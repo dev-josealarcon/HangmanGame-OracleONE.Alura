@@ -18,7 +18,7 @@ let orderLetter = [],
     letterError = '',
     option = false;
 
-let setWord = ['MORNING', 'HELLO', 'HOUSE', 'EVENING', 'SCHOOL', 'STADIUM', 'HOTDOG', 'EDUCATION', 'MAGAZINE', 'LANGUAGE'];
+let setWord = ['MORNING', 'HELLO', 'HOUSE', 'EVENING', 'SCHOOL', 'STADIUM', 'HOTDOG', 'MASTER', 'MAGAZINE', 'LANGUAGE'];
 
 const drawStrokeObj = {
     drawHead(x, y, raio, cor) {
@@ -127,7 +127,7 @@ function validateLetter(e) {
                     : letterError;
             d.getElementById('info-alert').style.color = '#8e8e8e';
             for (let i = 0; i < button.length; i++) button[i].removeAttribute('disabled');
-            game();
+            game().addEventListener('focus');
         } else {
             d.getElementById('info-alert').style.color = 'red';
             for (let i = 0; i < button.length; i++) button[i].setAttribute('disabled', 'disabled');
@@ -207,7 +207,7 @@ function saveWord() {
         newArrayWord = [];
         drawStrokeObj['clear']();
         option = false;
-        game();
+        game().addEventListener('focus');;
     }
 }
 
@@ -223,7 +223,7 @@ d.addEventListener('click', e => {
         letterError = '';
         drawStrokeObj['clear']();
         option = false;
-        game();
+        game().addEventListener('focus');;
     };
     if (e.target.matches('#btn-add-word')) {
         showMain.style.display = 'none';
@@ -237,7 +237,7 @@ d.addEventListener('click', e => {
         newArrayWord = [];
         drawStrokeObj['clear']();
         option = false;
-        game();
+        game().addEventListener('focus');;
     }
     if (e.target.matches('#btn-give-up')) {
         showMain.style.display = 'flex';
