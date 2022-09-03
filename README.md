@@ -1,6 +1,7 @@
 # HangmanGame-OracleONE.Alura
+## Hangman Game
 
-## Access the game by clicking  >> <a href="https://dev-josealarcon.github.io/TextDecoder-OracleONE.Alura/" target="_blank">here</a>!
+## Access the game by clicking  >> <a href="https://dev-josealarcon.github.io/HangmanGame-OracleONE.Alura/" target="_blank">here</a>!
 
 # Challenge ONE Sprint 02: Create your own Hangman with Javascript
 Hangman is a guessing game for two or more players. One player thinks of a word, phrase or phrase and the other(s) try to guess by suggesting letters within a certain number of guesses.
@@ -25,4 +26,4 @@ Extras:
 
  ## Mobile
  
-<img src="/assets/mobile.jpg" alt="Page mobile">
+<img src="/assets/mobile.png" alt="Page mobile">
