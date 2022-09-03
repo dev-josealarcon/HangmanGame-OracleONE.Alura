@@ -207,7 +207,7 @@ function saveWord() {
         newArrayWord = [];
         drawStrokeObj['clear']();
         option = false;
-        game().addEventListener('focus');;
+        game().addEventListener('focus');
     }
 }
 
@@ -223,7 +223,7 @@ d.addEventListener('click', e => {
         letterError = '';
         drawStrokeObj['clear']();
         option = false;
-        game().addEventListener('focus');;
+        game().addEventListener('focus');
     };
     if (e.target.matches('#btn-add-word')) {
         showMain.style.display = 'none';
@@ -237,7 +237,7 @@ d.addEventListener('click', e => {
         newArrayWord = [];
         drawStrokeObj['clear']();
         option = false;
-        game().addEventListener('focus');;
+        game().addEventListener('focus');
     }
     if (e.target.matches('#btn-give-up')) {
         showMain.style.display = 'flex';
